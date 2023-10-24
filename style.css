@@ -1,0 +1,275 @@
+body {
+    background-color: #e7e7e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh; */
+    background-color: #d1d1d1;
+}
+
+nav {
+    margin: 3px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    font-size: 22px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.logo_menu {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+nav ul li a {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+}
+
+
+
+.sesion-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-carousel {
+    flex: 1;
+    padding: 20px;
+}
+
+.texto-carousel h2 {
+    text-align: center;
+}
+
+.texto-carousel span {
+    line-height: 2;
+    text-align: center;
+}
+
+.contenido-carousel {
+    flex: 2;
+    padding: 20px;
+}
+
+.contenido-mensaje {
+    background-color: #d1d1d1;
+    text-align: center;
+}
+
+.contenido-mensaje button {
+    background-color: #3d3d3d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contenido-mensaje button:hover {
+    background-color: #000000;
+}
+
+.contenido-mensaje h2 {
+    padding-top: 20px;
+}
+
+.contenido-mensaje a {
+    color: white;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3d3d3d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s;
+    justify-content: center;
+    align-items: center
+}
+
+.slide {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px; /* Ajusta el ancho según tus necesidades */
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    border-radius: 15px;
+    clip-path: inset(0 0 0 0)
+    
+}
+
+.contenido-reseñas {
+    text-align: center;
+}
+
+.estrellas span {
+    color: red;
+    font-size: 38px;
+}
+
+.reseñas-container {
+    overflow: hidden;
+    width: 100%
+    
+}
+
+.reseñas {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    white-space: normal;
+    width: 100%;
+    width: max-content;
+
+}
+
+.contenido-reseñas h2 {
+    margin-top: 40px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.user-photo {
+    width: 30%;
+    border-radius: 5px 5px 0 0;
+}
+
+.user-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-review {
+    margin-top: 10px;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+        
+    }
+
+    100% {
+        transform: translateX(-100%);
+        
+    }
+}
+
+
+.formulario {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px transparent;
+    border-radius: 5px;
+}
+
+.container-formulario h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.container-formulario button {
+    background-color: #3d3d3d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container-formulario button:hover {
+    background-color: #000000;
+}
